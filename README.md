@@ -1,2 +1,2 @@
-# DemoContract
-Demo Contract 
+# DemoContracts
+Demo Contracts
