@@ -4,9 +4,9 @@ contract SolidityTxOrigin {
     function dangerousWithdraw() public returns (bool) {
         address owner;
         // <yes> <report> SOLIDITY_TX_ORIGIN 12e802
-        if (tx.origin == owner) {
-            return true;
-        }
+        //if (tx.origin == owner) {
+        //    return true;
+        //}
         string memory origin = "foo";
         if (msg.sender != tx.origin) {
             revert();
