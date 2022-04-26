@@ -8,6 +8,8 @@ contract TimestampDependence {
         if ( startTime + 1 days == block.timestamp) {}
         // <yes> <report> SOLIDITY_EXACT_TIME 1955d9
         if ( startTime + 1 days != now) {}
+        if ( startTime + 1 days >= now) {}
+        if ( startTime + 1 days <= block.timestamp) {}
         require(true == ICOisEnd(now));
         require(now >= startTime && now <= startTime + 1 days);
         require(now > startTime + 1 days);
